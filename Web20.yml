@@ -30,8 +30,8 @@ rubrics:
     metric: "Je úkol č. 3, který se týká *algoritmicky tvořeného feedu* zpracován správně?"
     0: "Úkol není vypracovaný anebo je zcela nesrozumitelný."
     1: "V úkolu je korektně užíván termín „feed“."
-    2: "Zpracovaný úkol správně odpovídá na položenou otázku."
-    3: "Zpracovaný úkol správně odpovídá na položenou otázku a autor(ka) klade rozšiřující otázky, v nichž se autor zamýšlí nad vlivem popisovaných jevů."
+    2: "Úkol je zpracovaný dle zadání."
+    3: "Úkol je zpracovaný dle zadání a autor(ka) klade rozšiřující otázky, v nichž se zamýšlí nad vlivem popisovaných jevů."
   - 
     metric: "Je úkol týkající se MOOC zpracován správně?"
     0: "Úkol není vypracovaný anebo je zcela nesrozumitelný."
