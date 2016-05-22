@@ -68,7 +68,7 @@ questions: |
     
     > **Tip:** Při práci využijte nástroj, který vám umožní průběžný náhled vykreslené webové stránky.
 input: html
-prefil: |
+prefill: |
   <!DOCTYPE html>
   <html>
     <head>
