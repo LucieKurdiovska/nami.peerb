@@ -63,7 +63,7 @@ bloom: apply
 questions: |
     Vepište CSS deklaraci pro daný odstavec tak, aby se výsledek co nejlépe podobal příkladu (nezasahujte do HTML; rámeček u příkladu není jeho součástí): 
   
-    <div style "border: 1px solid #ddd; background: #eee; padding: 20px">
+    <div style="border: 1px solid #ddd; background: #eee; padding: 20px">
       <p style="font-family: %fontFamily%; font-size: %fontSize%; color: %color%; %misc%">Bezbarvé zelené myšlenky zuřivě spí.</p>
       <p style="font-family: sans-serif"><i>Noam Chomsky</i></p>
     </div>
