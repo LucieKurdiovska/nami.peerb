@@ -1,0 +1,147 @@
+name: "Náhled závěrečného testu"
+summary: "Podívejte se na podobu závěrečného testu."
+goals: |
+  Toto je náhled závěrečného testu. Ten bude mít podobnou strukturu, ale v každé kategorii bude zařazeno více otázek. (Ty se mohou mezi jednotlivými termíny lišit.)
+  
+  Test trvá 90 minut. **Jde o tzv. open-book test:** Během zkoušky budeme moci využívat přístup k internetu či jakékoli jiné informační zdroje. Jediná nepovolená aktivita během testu je komunikace s dalšími osobami v jakékoli formě.
+      
+  Důraz je kladen na schopnost aplikace zvládnuté látky. V testu naleznete 10 úkolů, které jsou hodnoceny po dvou bodech (0 = nesplněno, 1 = nesplněno, ale je zřejmé pochopení principů, 2 = splněno). Více k hodnocení kurzu najdete na [stránce předmětu](https://is.muni.cz/predmet/phil/jaro2016/VIKBA07).  
+reading:
+rubrics:
+  - "Tato lekce není určena ke vzájemnému hodnocení."
+preface:
+---
+# verzování, git, github
+bloom: understand
+questions:
+  - "Vysvětlete rozdíl mezi nástrojem *git* a službou *Github* a stručně obojí popište."
+  - "Vysvětlete, co znamená, že je verzovací systém *„distribuovaný”*."
+---
+# verzování, git, github - prakticky
+bloom: evaluate
+questions:
+  - "Na příkladu *commitu*, který jste vytvořili kdykoli v průběhu semestru, demonstrujte klíčové vlastnosti dobrého commitu."
+  - "Na příkladu *pull requestu*, který jste vytvořili kdykoli v průběhu semestru, demonstrujte klíčové vlastnosti dobrého *pull requestu*."
+---
+# css, selektory, vlastnosti
+bloom: understand
+questions:
+  - "Popište, co je to v kontextu CSS *selektor*."
+  - "Popište, k čemu jsou v dokumentu HTML užívány elementy *div* a *span*."
+---
+# css, selektory, vlastnosti - prakticky
+params:
+  fontFamily:
+    - "Georgia, serif"
+    - "'Palatino Linotype', 'Book Antiqua', Palatino, serif"
+    - "'Times New Roman', Times, serif"
+    - "Arial, Helvetica, sans-serif"
+    - "'Arial Black', Gadget, sans-serif"
+    - "'Comic Sans MS', cursive, sans-serif"
+    - "Impact, Charcoal, sans-serif"
+    - "'Lucida Sans Unicode', 'Lucida Grande', sans-serif"
+    - "Tahoma, Geneva, sans-serif"
+    - "'Trebuchet MS', Helvetica, sans-serif"
+    - "Verdana, Geneva, sans-serif"
+    - "'Courier New', Courier, monospace"
+  fontSize:
+    - 12pt
+    - 20pt
+    - 32pt
+  color:
+    - red
+    - blue
+    - green
+    - yellow
+  misc:
+    - "text-decoration: underline"
+    - "font-style: italic"
+    - "font-weight: bold"
+    - "font-variant: small-caps"
+    - "text-align: right"
+bloom: apply
+questions: |
+    Vepište CSS deklaraci pro daný odstavec tak, aby se výsledek co nejlépe podobal příkladu (nezasahujte do HTML): 
+  
+    <p style="font-family: %fontFamily%; font-size: %fontSize%; color: %color%; %misc%">Bezbarvé zelené myšlenky zuřivě spí.</p>
+    <p style="font-family: sans-serif"><i>Noam Chomsky</i></p>
+    
+    > **Tip:** Při práci využijte nástroj, který vám umožní průběžný náhled vykreslené webové stránky.
+input: html
+prefil: |
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Příklad CSS</title>
+      <style>
+        
+      </style>
+    </head>
+    <body>
+      <h1>Nesmysl</h1>
+      <blockquote>
+        <p>Bezbarvé zelené myšlenky zuřivě spí.</p>
+        <cite>Noam Chomsky</cite>  
+      </blockquote>
+    </body>
+  </html>
+---
+# otevřený software, open source
+# tim berners lee a web, síťová neutralita
+# otevřené licence, otevřená data
+bloom: understand
+questions:
+  - "Vysvětlete, jaký je rozdíl mezi *svobodným softwarem* a *zdarma dostupným softwarem*."
+  - "Popište licenci *GNU GPL V3* a vysvětlete, jak se liší vůči jiným svobodným licencím."
+---
+# anonymita na internetu, tor, onion routing
+# dark web, deep web, sci-hub, web 2.0
+bloom: analyze
+questions:
+  - "Vysvětlete, jaký je rozdíl mezi *soukromím* (privacy) a *anonymitou* (anonymity) na internetu."
+  - "Na příkladu služby *sci-hub* vysvětlete, co je to *dark web*."
+---
+# publikování, cms, wp, tumblr, jekyll, blogger
+bloom: apply
+questions:
+  - "Srovnejte publikování obsahu na webu pomocí služby Blogger a platformy Jekyll."
+  - "Vysvětlete pojem *CMS* v kontextu publikování obsahu na webu."
+---
+# IA termíny
+# šablonování v Jekyllu, MD front matter, _config
+params:
+  term:
+    - labeling
+    - navigace
+    - nalezitelnost
+    - reprezentace
+    - dokument
+    - organizování
+    - obsah
+    - kontext
+    - uživatel
+    - metadata
+    - struktura
+bloom: understand
+questions: 
+  - "Vysvětlete v kontextu informační architektury termín *%term%*."
+  - "Vysvětlete, jak se v Jekyllu předávají parametry (obsah proměnných) do šablon."
+---
+# IP, DNS
+# iframe, embed
+# api, automatizace, IFTTT, IoT,
+# big data, MapReduce, GA, metriky
+bloom: analyze
+questions:
+  - "Na příkladu z týmového projektu (můžete využít i cizí projekt) vysvětlete, k čemu je užitečné *embedování* (embedding)."
+  - "Stručně popište alespoň tři metriky, které umožňuje měřit nástroj *Google Analytics*, s nimiž jste se setkali při práci na týmovém projektu."
+  - "Popište, jak je možné využít automatizace ve firemním prostředí."
+  - "Popište, jak pracuje služba IFTTT na příkladu dvou „receptů“."
+---
+# web2.0, wiki, MOOC
+# sharing economy
+# algoritmicky vytvářený feed
+bloom: analyze
+questions:
+  - "Vysvětlete, jaký je rozdíl mezi *Wikipedií* a konceptem *wiki*."
+  - "Popište, co je to algoritmicky vytvářený feed, a jak můžete v případě sociální sítě Facebook záměrně či nezáměrně ovlivnit, jaké výsledky algoritmus vrací."
